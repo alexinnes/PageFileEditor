@@ -1,4 +1,4 @@
-#H1 Change Computers Pagefile Size Programatically
+# Change Computers Pagefile Size Programatically
 
 This script will allow you to target computers and update their pagefile initial value and max value.
 The script can target multiple computers in the "Computer" parameter.
