@@ -16,7 +16,8 @@ Function Set-PageFileSize {
             [#Default Param is the local computer.(Can be multiple computers)
             [Parameter(Mandatory=$false, Position=0)]
             [string[]]
-            $computer = $ENV:ComputerName],
+            [Alias("Computer", "__SERVER", "IPAddress")]
+            $Computers = $env:COMPUTERNAME,
 
             [#The intitial size of the page file needs to be set, default is 4GB
             [Parameter(Mandatory=$true, Position=1)]
