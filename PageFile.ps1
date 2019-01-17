@@ -13,22 +13,22 @@ Function Set-PageFileSize {
 #>
 [CmdletBinding()]
     param (
-            [#Default Param is the local computer.(Can be multiple computers)
+            #Default Param is the local computer.(Can be multiple computers)
             [Parameter(Mandatory=$false, Position=0)]
             [string[]]
             $computer = $ENV:ComputerName],
 
-            [#The intitial size of the page file needs to be set, default is 4GB
+            #The intitial size of the page file needs to be set, default is 4GB
             [Parameter(Mandatory=$true, Position=1)]
             [int]
             $InitialSize = 4096],
 
-            [#Max size of the page file needs to be set too.
+            #Max size of the page file needs to be set too.
             [Parameter(Mandatory=$true, Position=2)]
             [int]
             $maximumSize = 8192],
 
-            [# Parameter help description
+            # Parameter help description
             [Parameter(Mandatory=$false, Position=3)]
             [Shell32.Folder]
             $errorFolder = "C:\PageFileScript"]
